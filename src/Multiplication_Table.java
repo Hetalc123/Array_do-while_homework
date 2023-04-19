@@ -1,17 +1,14 @@
 import java.util.Scanner;
-//print multiplication table of input number
+//print multiplication table as given pattern
 public class Multiplication_Table {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Number to print Table ");
-        int a = sc.nextInt();
-        int i=1;
-        System.out.println("Multiplication Table of "+ a + " :");
-        //loop to print table
-        do {
-            System.out.println(a+" X "+i+" = "+a*i);
-            i++;
-        }while (i<=12);
+        int i=0;
+        //running loop to print pattern
+        do {i++;
+            for (int j = 1; j <= 3; j++) {
+                System.out.print(i*j + " ");
+            }System.out.println();
+        }while (i<3);
 
     }
 }
